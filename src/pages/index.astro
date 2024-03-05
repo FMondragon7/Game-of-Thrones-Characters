@@ -1,10 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Families from "../sections/Families.astro";
+import Families from "@/components/families.jsx";
 ---
 
 <Layout title="Game of thrones characters">
 	<main class="w-full h-full py-10">
-		<Families />
+		<Families client:visible />
 	</main>
 </Layout>
