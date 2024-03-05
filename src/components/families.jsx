@@ -48,7 +48,7 @@ export default function Families () {
   const [selectedHouse, setSelectedHouse] = useState(null);
   
   return (
-    <section className="flex flex-col gap-6 h-full">
+    <section className="flex flex-col gap-6 h-full animate-fade-in">
       <span className="text-semibold text-grey tracking-[4px]">Families</span>
       <div
         className="bg-primary min-w-[350px] w-[25%] p-8 flex flex-col gap-4 max-h-full overflow-y-auto"
@@ -60,7 +60,7 @@ export default function Families () {
                 key={house.name}
                 className={`w-full h-20 bg-secondary px-6 py-4 flex flex-row text-center items-center gap-4 cursor-pointer
                 ${selectedHouse === house.name ? "bg-white" : ""}
-                hover:border hover:border-solid hover:border-amber-950 hover:scale-105 transition-all duration-50 ease-in-out`}
+                hover:border hover:border-solid hover:border-amber-950 hover: transition-all duration-50 ease-in-out`}
                 id={house.name}
                 onClick={(e) => {
                   if(selectedHouse === e.currentTarget.id) {
