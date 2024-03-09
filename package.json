@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.5.6",
     "@astrojs/react": "^3.0.10",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/cormorant-garamond": "^5.0.12",
     "@fontsource/noto-serif-jp": "^5.0.11",
     "@midudev/tailwind-animations": "^0.0.7",
     "@types/react": "^18.2.61",

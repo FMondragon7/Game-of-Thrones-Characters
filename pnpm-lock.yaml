@@ -14,6 +14,9 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.4.9)(tailwindcss@3.4.1)
+  '@fontsource/cormorant-garamond':
+    specifier: ^5.0.12
+    version: 5.0.12
   '@fontsource/noto-serif-jp':
     specifier: ^5.0.11
     version: 5.0.11
@@ -664,6 +667,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource/cormorant-garamond@5.0.12:
+    resolution: {integrity: sha512-YZHZQJiDncTqyV4O65UGFoys9/u2c+zFkTZBZVPe7FxwgVDRXMW4rQyqCea2nNcvgG8HColQEooH5Sh+VwF5sg==}
+    dev: false
 
   /@fontsource/noto-serif-jp@5.0.11:
     resolution: {integrity: sha512-6K2d6J6jxOOr3Wtz+YRk8EHOXB8N3Nj/Y0pDWL1CNLQ3zoGqBogniuQhb1R5B/+yIxd4LsCAZTj72Rm5ITzZcA==}
