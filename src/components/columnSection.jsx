@@ -25,7 +25,7 @@ export default function ColumnSection(props) {
                   id={item.name}
                   onClick={(e) => handleSelect(e)}
                 >
-                  <img className="w-12 h-12 pointer-events-none object-fill rounded-full" src={item.image.src} alt="item image" 
+                  <img className="w-12 h-12 pointer-events-none object-cover rounded-full" src={item.image.src} alt="item image" 
                   />
                     {/* style={{ filter: `${props.selectedItem === item.name || item.description ? "brightness(1) invert(0)" : "brightness(0) invert(1)"}` }} /> */}
                     <div className={item.description ? "flex flex-col gap-2  items-start" : ""}>

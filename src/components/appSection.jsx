@@ -1,5 +1,6 @@
 
 import ColumnSection from "./columnSection.jsx";
+import MoreInfoSection from "./moreInfoSection.jsx";
 
 // house emblems
 import arryn from "@/assets/arryn.png";
@@ -284,7 +285,8 @@ export default function AppSection () {
         list={HOUSES.find(house => house.name === selectedHouse)?.members || prevMembers || []} 
         selectedItem={selectedMember} 
         setSelectedItem={setSelectedMember}
-      />
+        />
+      <MoreInfoSection/>
     </section>
   )
 }
