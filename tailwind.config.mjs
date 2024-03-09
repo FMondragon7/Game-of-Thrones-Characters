@@ -9,6 +9,7 @@ export default {
 				"primary": "#151515",
 				"secondary": "#222222",
 				"grey": "#444444",
+				"description": "#666666",
 			}
 		},
 	},
