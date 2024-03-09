@@ -1,14 +1,16 @@
 
 import ColumnSection from "./columnSection.jsx";
 
-import arryn from "@/assets/arryn.svg";
-import greyjoy from "@/assets/greyjoy.svg";
-import lannister from "@/assets/lannister.svg";
-import martell from "@/assets/martell.svg";
-import stark from "@/assets/stark.svg";
-import targaryen from "@/assets/targaryen.svg";
-import tully from "@/assets/tully.svg";
-import tyrell from "@/assets/tyrell.svg";
+import arryn from "@/assets/arryn.png";
+import greyjoy from "@/assets/greyjoy.png";
+import lannister from "@/assets/lannister.png";
+import martell from "@/assets/martell.png";
+import stark from "@/assets/stark.png";
+import targaryen from "@/assets/targaryen.png";
+import tully from "@/assets/tully.png";
+import tyrell from "@/assets/tyrell.png";
+
+import cersei from "@/assets/cersei.png";
 
 import { useEffect, useState } from "react";
 
@@ -71,7 +73,7 @@ const HOUSES = [
       },
       {
         name: "Cersei Lannister",
-        image: "cersei-lannister.jpg",
+        image: cersei,
         description: "Queen of the Seven Kingdoms",
       },
     ],

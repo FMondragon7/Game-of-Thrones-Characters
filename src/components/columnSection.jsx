@@ -7,7 +7,7 @@ export default function ColumnSection(props) {
     }
     props.setSelectedItem(e.currentTarget.id)
   }
-  
+
   return (
     <section className={`min-w-[350px] flex flex-col gap-6 ${props.customClass}`}>
       <span className="text-semibold text-grey tracking-[4px]">{props.title}</span>
@@ -20,13 +20,14 @@ export default function ColumnSection(props) {
                 <div
                   key={item.name}
                   className={`w-full h-20 bg-secondary px-6 py-4 flex flex-row text-center items-center gap-4 cursor-pointer
-                  ${props.selectedItem === item.name ? "bg-white" : ""}
-                  hover:border hover:border-solid hover:border-amber-950 hover:transition-all duration-50 ease-in-out`}
+                  ${props.selectedItem === item.name ? "bg-selected" : ""}
+                  border border-none border-amber-950 hover:border-solid hover:scale-110 hover:transition-all duration-500 ease-in-out`}
                   id={item.name}
                   onClick={(e) => handleSelect(e)}
                 >
                   <img className="w-12 h-12 pointer-events-none" src={item.image.src} alt="item image" 
-                    style={{ filter: `${props.selectedItem === item.name ? "brightness(1) invert(0)" : "brightness(0) invert(1)"}` }} />
+                  />
+                    {/* style={{ filter: `${props.selectedItem === item.name || item.description ? "brightness(1) invert(0)" : "brightness(0) invert(1)"}` }} /> */}
                     <div className={item.description ? "flex flex-col gap-2  items-start" : ""}>
                       <span className={`pointer-events-none ${props.selectedItem === item.name ? "text-secondary" : "text-white"}`}>
                         {item.name}
