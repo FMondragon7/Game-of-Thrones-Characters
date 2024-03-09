@@ -7,8 +7,6 @@ import targaryen from "@/assets/targaryen.svg";
 import tully from "@/assets/tully.svg";
 import tyrell from "@/assets/tyrell.svg";
 
-import { useState } from "react";
-
 const HOUSES = [
   {
     name: "House Targaryen",
@@ -44,40 +42,38 @@ const HOUSES = [
   },
 ];
 
-export default function Families () {
-  const [selectedHouse, setSelectedHouse] = useState(null);
-  
+export default function Families(props) {
   return (
-    <section className="flex flex-col gap-6 h-full animate-fade-in">
+    <section className="min-w-[350px] flex flex-col gap-6">
       <span className="text-semibold text-grey tracking-[4px]">Families</span>
-      <div
-        className="bg-primary min-w-[350px] w-[25%] p-8 flex flex-col gap-4 max-h-full overflow-y-auto"
-      >
-        {
-          HOUSES.map((house) => {
-            return (
-              <div
-                key={house.name}
-                className={`w-full h-20 bg-secondary px-6 py-4 flex flex-row text-center items-center gap-4 cursor-pointer
-                ${selectedHouse === house.name ? "bg-white" : ""}
-                hover:border hover:border-solid hover:border-amber-950 hover: transition-all duration-50 ease-in-out`}
-                id={house.name}
-                onClick={(e) => {
-                  if(selectedHouse === e.currentTarget.id) {
-                    setSelectedHouse(null)
-                    return
-                  }
-                  setSelectedHouse(e.currentTarget.id)
-                }}
-              >
-                <img className="w-12 h-12 pointer-events-none" src={house.image.src} alt="house emblem" 
-                  style={{ filter: `${selectedHouse === house.name ? "brightness(1) invert(0)" : "brightness(0) invert(1)"}` }} />
-                <span className={`pointer-events-none ${selectedHouse === house.name ? "text-secondary" : "text-white"}`}>{house.name}</span>
-              </div>
-            );
-          })
-        }
-      </div>
+        <div
+          className="bg-primary p-8 flex flex-col gap-4 max-h-full overflow-y-auto"
+        >
+          {
+            HOUSES.map((house) => {
+              return (
+                <div
+                  key={house.name}
+                  className={`w-full h-20 bg-secondary px-6 py-4 flex flex-row text-center items-center gap-4 cursor-pointer
+                  ${props.selectedHouse === house.name ? "bg-white" : ""}
+                  hover:border hover:border-solid hover:border-amber-950 hover: transition-all duration-50 ease-in-out`}
+                  id={house.name}
+                  onClick={(e) => {
+                    if(props.selectedHouse === e.currentTarget.id) {
+                      props.setSelectedHouse(null)
+                      return
+                    }
+                    props.setSelectedHouse(e.currentTarget.id)
+                  }}
+                >
+                  <img className="w-12 h-12 pointer-events-none" src={house.image.src} alt="house emblem" 
+                    style={{ filter: `${props.selectedHouse === house.name ? "brightness(1) invert(0)" : "brightness(0) invert(1)"}` }} />
+                  <span className={`pointer-events-none ${props.selectedHouse === house.name ? "text-secondary" : "text-white"}`}>{house.name}</span>
+                </div>
+              );
+            })
+          }
+        </div>
     </section>
   )
 }
