@@ -9,7 +9,7 @@ export default function ColumnSection(props) {
   }
 
   return (
-    <section className={`min-w-[350px] flex flex-col gap-6 ${props.customClass}`}>
+    <section className={`min-w-[350px] h-full flex flex-col gap-6 ${props.customClass}`}>
       <span className="text-semibold text-grey tracking-[4px]">{props.title}</span>
         <div
           className="bg-primary p-8 flex flex-col gap-4 max-h-full overflow-y-auto"
@@ -25,7 +25,7 @@ export default function ColumnSection(props) {
                   id={item.name}
                   onClick={(e) => handleSelect(e)}
                 >
-                  <img className="w-12 h-12 pointer-events-none" src={item.image.src} alt="item image" 
+                  <img className="w-12 h-12 pointer-events-none object-fill rounded-full" src={item.image.src} alt="item image" 
                   />
                     {/* style={{ filter: `${props.selectedItem === item.name || item.description ? "brightness(1) invert(0)" : "brightness(0) invert(1)"}` }} /> */}
                     <div className={item.description ? "flex flex-col gap-2  items-start" : ""}>
