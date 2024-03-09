@@ -5,8 +5,8 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 
 export default function MoreInfoSection(props) {
   return (
-    <section className={`min-w-[30%] bg-primary absolute right-0 top-0 bottom-0 border-l border-secondary flex flex-col items-center
-      p-14 gap-14`}>
+    <section className={`min-w-[30%] bg-primary absolute ${props.selectedMember && props.selectedHouse ? "right-0" : "right-[-50%]"} 
+      top-0 bottom-0 border-l border-secondary flex flex-col items-center p-14 gap-14 animate-ease-in-out duration-1000`}>
       <span className="text-m text-semibold text-grey tracking-[4px]">Character Details</span>
       <div className="flex flex-col w-full items-center text-center text-white">
         <img className="h-[260px] w-[200px] border object-cover mb-10" src={daenerys.src} alt="character image" />
