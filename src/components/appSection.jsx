@@ -36,6 +36,16 @@ import viserys from "@/assets/viserys.png";
 import rhaenyra from "@/assets/rhaenyra.png";
 import daemon from "@/assets/daemon.png";
 
+//tyrell members
+import mace from "@/assets/mace.png";
+import margaery from "@/assets/margaery.png";
+import loras from "@/assets/loras.png";
+import olenna from "@/assets/olenna.png";
+
+//arryn members
+import lysa from "@/assets/lysa.png";
+import robert from "@/assets/robert.png";
+
 
 import { useEffect, useState } from "react";
 
@@ -143,18 +153,23 @@ const HOUSES = [
     image: tyrell,
     members: [
       {
+        name: "Margaery Tyrell",
+        image: margaery,
+        description: "The young queen",
+      },
+      {
         name: "Mace Tyrell",
-        image: "mace-tyrell.jpg",
+        image: mace,
         description: "Lord of Highgarden",
       },
       {
         name: "Olenna Tyrell",
-        image: "olenna-tyrell.jpg",
+        image: olenna,
         description: "Queen of Thorns",
       },
       {
         name: "Loras Tyrell",
-        image: "loras-tyrell.jpg",
+        image: loras,
         description: "Knight of Flowers",
       },
     ],
@@ -164,18 +179,13 @@ const HOUSES = [
     image: arryn,
     members: [
       {
-        name: "Jon Arryn",
-        image: "jon-arryn.jpg",
-        description: "Lord of the Eyrie",
-      },
-      {
         name: "Lysa Arryn",
-        image: "lysa-arryn.jpg",
+        image: lysa,
         description: "Lady of the Eyrie",
       },
       {
         name: "Robert Arryn",
-        image: "robert-arryn.jpg",
+        image: robert,
         description: "Lord of the Eyrie",
       },
     ],
@@ -270,8 +280,10 @@ export default function AppSection () {
     if (selectedHouse) {
       setPrevMembers(HOUSES.find(house => house.name === selectedHouse)?.members || [])
     }
+
+    setSelectedMember(null)
   }, [selectedHouse])
-  
+
   return (
     <section className="flex flex-row gap-24 h-full animate-fade-in" style={{ animationDelay: "1s" }}>
       <ColumnSection 
@@ -286,7 +298,10 @@ export default function AppSection () {
         selectedItem={selectedMember} 
         setSelectedItem={setSelectedMember}
         />
-      <MoreInfoSection/>
+      <MoreInfoSection 
+        selectedHouse={selectedHouse}
+        selectedMember={selectedMember}
+      />
     </section>
   )
 }

@@ -1,7 +1,7 @@
 export default function ColumnSection(props) {
 
   const handleSelect = (e) => {
-    if(props.selectedItem === e.currentTarget.id) {
+    if (props.selectedItem === e.currentTarget.id) {
       props.setSelectedItem(null)
       return
     }
