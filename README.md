@@ -9,6 +9,7 @@ pnpm create astro@latest -- --template basics
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
 
 > 👑⚔
+![game-of-thrones-app](https://github.com/FMondragon7/Game-of-Thrones-Characters/assets/124802878/4260236e-3917-43b9-aca1-1dc423a2557f)
 
 
 ## 🚀 Project Structure
