@@ -252,16 +252,19 @@ const HOUSES = [
         name: "Balon Greyjoy",
         image: balon,
         description: "Lord Reaper of Pyke",
+        quote: "No man has ever died from bending his knee. He who kneels may rise again, blade in hand. He who will not kneel stays dead, stiff legs and all."
       },
       {
         name: "Yara Greyjoy",
         image: yara,
         description: "Iron Queen",
+        quote: "Don't die so far from the sea."
       },
       {
         name: "Theon Greyjoy",
         image: theon,
         description: "Reek",
+        quote: "What Is Dead May Never Die."
       },
     ],
   },
