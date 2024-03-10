@@ -294,11 +294,13 @@ const HOUSES = [
         name: "Hoster Tully",
         image: hoster,
         description: "Lord of Riverrun",
+        quote: "Little cat. My little cat. I watched for you ..."
       },
       {
         name: "Edmure Tully",
         image: edmure,
         description: "Lord of Riverrun",
+        quote: "How can we talk of peace while the Lannisters spread like a pestilence over my father's domains, stealing his crops and slaughtering his people?"
       },
     ],
   },
