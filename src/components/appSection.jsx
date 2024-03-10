@@ -204,21 +204,25 @@ const HOUSES = [
         name: "Margaery Tyrell",
         image: margaery,
         description: "The young queen",
+        quote: "I Want To Be The Queen."
       },
       {
         name: "Mace Tyrell",
         image: mace,
         description: "Lord of Highgarden",
+        quote: "There is no greater pleasure than to serve the King's Grace. If I was deemed worthy to join your royal council, you would find none more loyal or true."
       },
       {
         name: "Olenna Tyrell",
         image: olenna,
         description: "Queen of Thorns",
+        quote: "Spare Me The Homilies. I Can Smell A Fraud From A Mile Away."
       },
       {
         name: "Loras Tyrell",
         image: loras,
         description: "Knight of Flowers",
+        quote: "Most have been forgotten. Most deserve to be forgotten. The heroes will always be remembered. The best. The best and the worst. And a few who were a bit of both."
       },
     ],
   },
