@@ -234,11 +234,13 @@ const HOUSES = [
         name: "Lysa Arryn",
         image: lysa,
         description: "Lady of the Eyrie",
+        quote: "A man will tell you poison is dishonorable, but a woman's honor is different. The Mother shaped us to protect our children, and our only dishonor is in failure"
       },
       {
         name: "Robert Arryn",
         image: robert,
         description: "Lord of the Eyrie",
+        quotes: "The bad little man. Mother, can I make him fly? I want to see him fly."
       },
     ],
   },
