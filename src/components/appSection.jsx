@@ -331,7 +331,7 @@ export default function AppSection () {
 
   useEffect(() => {
     if (selectedHouse) {
-      setPrevMembers(HOUSES.find(house => house.name === selectedHouse)?.members || [])
+      setPrevMembers(selectedHouse.members)
     }
 
     setSelectedMember(null)
