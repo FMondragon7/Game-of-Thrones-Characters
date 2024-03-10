@@ -18,6 +18,7 @@ import cersei from "@/assets/cersei.png";
 import jaime from "@/assets/jaime.png";
 import tywin from "@/assets/tywin.png";
 import tyrion from "@/assets/tyrion.png";
+import joffrey from "@/assets/joffrey.png";
 
 //stark members
 import eddard from "@/assets/eddard.png";
@@ -167,21 +168,31 @@ const HOUSES = [
         name: "Cersei Lannister",
         image: cersei,
         description: "Lady of Casterly Rock",
+        quote: "No one walks away from me."
       },
       {
         name: "Jaime Lannister",
         image: jaime,
         description: "Lord Commander of the Kingsguard",
+        quote: "To be honest, I never really cared much for them. Innocent, or otherwise."
       },
       {
         name: "Tyrion Lannister",
         image: tyrion,
         description: "Hand of the Queen",
+        quote: "That’s What I Do, I Drink And I Know Things"
       },
       {
         name: "Tywin Lannister",
         image: tywin,
         description: "Lord paramount of the Westerlands",
+        quote: "Lannisters Don't Act Like Fools"
+      },
+      {
+        name: "Joffrey Lannister",
+        image: joffrey,
+        description: "Prince of the seven kingdoms",
+        quote: "I'll Tell You What. I'm Going To Give You A Present. After I Raise My Armies, And Kill Your Traitor Brother, I'll Give You His Head As Well."
       },
     ],
   },
