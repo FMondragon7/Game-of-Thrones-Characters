@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# Game of Thrones Characters
 
 ```sh
 pnpm create astro@latest -- --template basics
