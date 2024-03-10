@@ -312,11 +312,13 @@ const HOUSES = [
         name: "Tormund Giantsbane",
         image: tormund,
         description: "Free Folk Warrior",
+        quote: "From Now On, You'd Better Kneel Every Time I Fart."
       },
       {
         name: "Ygritte",
         image: ygritte,
         description: "Spear Wife",
+        quote: "You know nothing Jon Snow."
       },
     ],
   },
