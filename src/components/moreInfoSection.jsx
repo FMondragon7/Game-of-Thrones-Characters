@@ -17,7 +17,7 @@ export default function MoreInfoSection(props) {
       top-0 bottom-0 border-l border-secondary flex flex-col items-center p-14 gap-14 animate-ease-in-out duration-1000`}>
       <span className="text-m text-semibold text-grey tracking-[4px]">Character Details</span>
       <div className="flex flex-col w-full items-center text-center text-white">
-        <img className="h-[260px] w-[200px] border object-cover mb-10" src={member?.image.src} alt="character image" />
+        <img className="h-[260px] w-full max-w-[200px] border object-cover mb-10 aspect-video" src={member?.image.src} alt="character image" />
         <div className="relative mb-10">
           <img className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" src={symbol.src} alt="symbol" />
           <h3 className="text-xl ">{member?.name}</h3>
