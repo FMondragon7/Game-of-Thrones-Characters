@@ -113,41 +113,49 @@ const HOUSES = [
         name: "Arya Stark",
         image: arya,
         description: "No one",
+        quote: "Anyone Can Be Killed"
       },
       {
         name: "Brandon Stark",
         image: brandon,
         description: "Lord of Winterfell",
+        quote: "You Wouldn't Be Able To Help Us If I Let Them Murder You First."
       },
       {
         name: "Eddard Stark",
         image: eddard,
         description: "Lord of Winterfell",
+        quote: "The man who passes the sentence should swing the sword."
       },
       {
         name: "Catelyn Stark",
         image: catelyn,
         description: "Lady of Winterfell",
+        quote: "Show me the path I must walk and do not let me stumble in the dark places that lie ahead."
       },
       {
         name: "Robb Stark",
         image: robb,
         description: "King in the North",
+        quote: "I did not choose the war, but I have no choice but to fight it."
       },
       {
         name: "Sansa Stark",
         image: sansa,
         description: "Lady of Winterfell",
+        quote: "I am Sansa Stark of Winterfell. This is my home, and you can't frighten me."
       },
       {
         name: "Rickon Stark",
         image: rickon,
         description: "Prince of Winterfell",
+        quote: "We're Not Southerners."
       },
       {
         name: "Talisa Stark",
         image: talisa,
         description: "Queen Consort",
+        quote: "I always thought I was a brilliant liar"
       },
     ],
   },
