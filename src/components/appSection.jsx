@@ -276,16 +276,13 @@ const HOUSES = [
         name: "Doran Martell",
         image: doran,
         description: "Prince of Dorne",
+        quotes: "Words are like arrows, Arianne. Once loosed, you cannot call them back."
       },
       {
         name: "Oberyn Martell",
         image: oberyn,
         description: "Red Viper",
-      },
-      {
-        name: "Elia Martell",
-        image: elia,
-        description: "Princess of Dorne",
+        quote: "When It Comes To War, I Fight For Dorne. When It Comes To Love... I Don't Choose Sides."
       },
     ],
   },
