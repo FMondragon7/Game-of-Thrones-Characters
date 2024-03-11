@@ -16,13 +16,13 @@
     "@fontsource/cormorant-garamond": "^5.0.12",
     "@fontsource/noto-serif-jp": "^5.0.11",
     "@midudev/tailwind-animations": "^0.0.7",
-    "@types/react": "^18.2.61",
-    "@types/react-dom": "^18.2.19",
-    "astro": "^4.4.9",
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "astro": "^4.4.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.2"
   }
 }
