@@ -1,6 +1,6 @@
 
-import ColumnSection from "./columnSection.jsx";
-import MoreInfoSection from "./moreInfoSection.jsx";
+import ColumnSection from "@/columnSection.jsx";
+import MoreInfoSection from "@/moreInfoSection.jsx";
 
 // house emblems
 import arryn from "@/assets/arryn.png";
@@ -55,7 +55,6 @@ import theon from "@/assets/theon.png";
 //martell members
 import doran from "@/assets/doran.png";
 import oberyn from "@/assets/oberyn.png";
-import elia from "@/assets/elia.png";
 
 //tully members
 import hoster from "@/assets/hoster.png";
