@@ -1,6 +1,6 @@
 
-import ColumnSection from "@/columnSection.jsx";
-import MoreInfoSection from "@/moreInfoSection.jsx";
+import ColumnSection from "@/components/columnSection.jsx";
+import MoreInfoSection from "@/components/moreInfoSection.jsx";
 
 // house emblems
 import arryn from "@/assets/arryn.png";
