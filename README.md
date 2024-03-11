@@ -12,6 +12,10 @@ pnpm create astro@latest -- --template basics
 ![game-of-thrones-app](https://github.com/FMondragon7/Game-of-Thrones-Characters/assets/124802878/4260236e-3917-43b9-aca1-1dc423a2557f)
 
 
+https://github.com/FMondragon7/Game-of-Thrones-Characters/assets/124802878/f0a4ad4c-1b05-406c-b425-af9c30e942f9
+
+
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
