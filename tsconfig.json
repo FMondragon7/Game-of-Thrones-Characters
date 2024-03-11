@@ -4,7 +4,7 @@
     "baseUrl": "/home/fernandom7/fernandomondragon/personalProjects/astro/game-of-thrones-characters",
     "paths": {
       "@/*": [
-        "./src/*"
+        "src/*"
       ]
     },
     "jsx": "react-jsx",
